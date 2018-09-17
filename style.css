@@ -1,5 +1,5 @@
 body{
-	font-family: LGS !important;
+	font-family: LGS, arial !important;
 	scroll-behavior: smooth !important;
 }
 .bold {
@@ -210,7 +210,8 @@ footer a:hover{
 }
 @font-face {
 	font-family: LGS;
-	src: url(font/lc.ttf);
+/* 	src: url(font/lc.ttf); */
+	src: url(https://fonts.googleapis.com/css?family=Pathway+Gothic+One);
 }
 @font-face {
 	font-family: LGSI;
