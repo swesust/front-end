@@ -1,5 +1,5 @@
-# Front-End of SWE Website
-This is the front end of the website of SUST SWE Website.
+# Map Model
+![Map](img/map_model_ver_1.png)
 
 ## Student Profile Database Model
   ### Basic
