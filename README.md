@@ -1,5 +1,5 @@
 # Map Model
-![Map](img/map_model_ver_1.png)
+![Map](map_model_ver_1.png)
 
 ## Student Profile Database Model
   ### Basic
