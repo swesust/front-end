@@ -2,6 +2,7 @@ body {
     padding: 0;
     margin: 0;
     background: #222;
+    font-family: sans-serif;
 }
 .particle-background {
     position: fixed;
@@ -65,3 +66,93 @@ body {
     color: #eee;
     /* border: 1px solid #aaa; */
 }
+.checkbox {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+    color: #ddd;
+    width: 50px;
+}
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.checkbox:hover input ~ .checkmark {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.checkbox input:checked ~ .checkmark {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+.checkbox .checkmark:after {
+    left: 5.5px;
+    top: 2.5px;
+    width: 4px;
+    height: 8px;
+    border: solid rgba(0, 0, 0, 0.5);
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+
+
+/* .checkbox {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+}
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    cursor: pointer;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.checkbox:hover input  ~ .checkmark {
+    background-color: rgba(255, 255, 255, 0.6);
+} */
+
+/* .faculty-label {
+    font-size: 17px;
+    color: #ddd;
+}
+.faculty-check, .faculty-label {
+    cursor: pointer;
+    margin-top: 10px;
+}
+.faculty-check {
+    height: 15px;
+    width: 15px;
+    background: rgba(255, 255, 255, 0.4);
+} */

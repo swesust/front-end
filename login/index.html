@@ -21,11 +21,15 @@
             <form class="login-form" method="post">
                 <input type="text" name="regno" class="regno-input full-width" placeholder="Registration No">
                 <input type="password" name="pass" class="pass-input full-width" placeholder="Password">
+                <label class="checkbox" for="faculty-check">Faculty
+                    <input type="checkbox" name="faculty" value="false" class="faculty-check" id="faculty-check" onclick="facultyClicked(this);">
+                    <span class="checkmark"></span>
+                </label>
                 <button type="submit" name="submit" class="login-button full-width">Log In</button>
             </form>
 
         </div>
 
-
+        <script src="main.js"></script>
     </body>
 </html>
