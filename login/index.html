@@ -4,6 +4,8 @@
         <meta charset="utf-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Login</title>
+        <!-- Linking Bootstrap CSS-->
+        <link rel="stylesheet" href="../common/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -13,6 +15,25 @@
         <div id="particles-js" class="particle-background"></div>
         <script src="particles.js"></script>
         <script src="app.js"></script>
+
+        <!-- Responsive Mainmenu -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#theMainNav" aria-controls="theMainNav"
+             aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand bold" href="#">SWE</a>
+
+            <div class="collapse navbar-collapse" id="theMainNav">
+                <ul class="navbar-nav justify-content-end alignEnd">
+                    <li class="nav-item"> <a class="nav-link" href="#">Home</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#about">About Us</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="../faculty/index.html">Faculty</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="../batch/index.html">Batch</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="../login/index.html">Login</a> </li>
+                </ul>
+            </div>
+        </nav>
 
         <!-- LOGIN FORM BOX -->
 
@@ -31,6 +52,10 @@
 
         </div>
 
+        <!-- Linking JSs-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="../common/bootstrap/js/bootstrap.min.js"></script>
         <script src="main.js"></script>
     </body>
 </html>

@@ -13,7 +13,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -60%);
     /* border: 2px solid #bbb; */
     padding: 20px 20px;
     width: 450px;
@@ -110,9 +110,9 @@ body {
 }
 .checkbox .checkmark:after {
     left: 5.5px;
-    top: 2.5px;
-    width: 4px;
-    height: 8px;
+    top: 3px;
+    width: 6px;
+    height: 10px;
     border: solid rgba(0, 0, 0, 0.5);
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
@@ -125,4 +125,23 @@ body {
 }
 .forgot-pass:hover {
     color: rgba(255, 255, 255, 0.6);
+}
+
+@media only screen and (min-width: 992px) {
+    .alignEnd {
+        position: absolute !important;
+        right: 10px;
+    }
+    .nav-item{
+        margin-left: 8px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .notImportant {
+        display: none;
+    }
+    .loginForm {
+        width: 70%;
+    }
 }
