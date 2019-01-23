@@ -41,9 +41,124 @@
 		</nav>
 	</header>
 
-    <div class="container">
-        
+    <div class="container editBlock">
+    	<h2 class="editTitle">Edit Profile</h2>
+
+		<form class="editForm" action="index.html" method="post">
+			<div class="box">
+        		<div class="box-header">
+        			Basics
+        		</div>
+        		<div class="box-container">
+					<div class="PicChange">
+        				<img src="img/dp.jpeg" alt="Profile Pic" class="proPicChangePic">
+						<label for="uploadProPic"><p>Change Profile Pic</p></label>
+						<input type="file" name="profilePic" id="uploadProPic">
+					</div>
+					<div class="PicChange">
+        				<img src="img/cover.jpeg" alt="Cover Pic" class="coverPicChangePic">
+						<label for="uploadCoverPic"><p>Change Cover Pic</p></label>
+						<input type="file" name="coverPic" id="uploadCoverPic">
+					</div>
+					<div class="form-group">
+						<label for="nameChange">Name</label>
+						<input type="text" name="name" value="Shakirul Hasan Khan" id="nameChange">
+					</div>
+					<div class="form-group">
+						<label for="emailChange">Email</label>
+						<input type="email" name="email" value="shakirul34@student.sust.edu" id="emailChange">
+					</div>
+					<div class="form-group">
+						<label for="phoneChange">Phone</label>
+						<input type="text" name="phone" value="+8801641186060" id="phoneChange">
+					</div>
+					<div class="form-group">
+						<label for="addressChange">Address</label>
+						<textarea name="address" id="addressChange"></textarea>
+					</div>
+					<div class="form-group">
+						<label for="alumniChange">Alumni</label>
+						<input type="checkbox" name="alumni" value="false" id="alumniChange">
+					</div>
+        		</div>
+        	</div>
+			<div class="box">
+        		<div class="box-header">
+        			Endorsements
+        		</div>
+        		<div class="box-container">
+					<div class="form-group">
+						<label for="progLang">Programming Language</label>
+						<input type="text" name="ProgrammingLanguage" value="C, C++, C#, Python, Java, JS" id="progLang"> <i class="fas fa-times-circle deleteBox"></i>
+					</div>
+					<div class="form-group">
+						<label for="intIn">Interested In</label>
+						<input type="text" name="InterestedIn" value="AI, ML, DL" id="intIn"> <i class="fas fa-times-circle deleteBox"></i>
+					</div>
+					<div class="addMoreEndorsement">
+						<a href="#" onclick="document.getElementById('endorPopUp').style.display='block'"> <i class="fas fa-plus-circle"></i> </a>
+					</div>
+        		</div>
+        	</div>
+			<div class="box">
+        		<div class="box-header">
+        			Integrated Profiles
+        		</div>
+        		<div class="box-container">
+					<div class="form-group">
+						<label for="fb">Facebook Id</label>
+						<input type="text" name="name" value="theshk.me" id="fb"> <i class="fas fa-times-circle deleteBox"></i>
+					</div>
+					<div class="form-group">
+						<label for="git">Github Username</label>
+						<input type="text" name="Github" value="KhanShaheb34" id="git"> <i class="fas fa-times-circle deleteBox"></i>
+					</div>
+					<div class="addMoreEndorsement">
+						<a href="#" onclick="document.getElementById('idPopUp').style.display='block'"> <i class="fas fa-plus-circle"></i> </a>
+					</div>
+        		</div>
+        	</div>
+		</form>
+
     </div>
+
+	<!-- Id Pop Up -->
+
+	<div class="endorPopUp" id="idPopUp">
+		<div class="popUpForm">
+			<div class="formData">
+				<select class="idSelect" name="IdSelect">
+					<option value="0">Facebook</option>
+					<option value="1">Github</option>
+					<option value="2">StopStalk</option>
+					<option value="3">Twitter</option>
+					<option value="4">Instagram</option>
+				</select>
+				<input type="text" name="idData" class="idData" placeholder="Id">
+				<button type="button" name="button" class="btn endoBtn btn-info">Add</button>
+				<button type="button" name="button" class="btn endoBtn btn-danger" onclick="document.getElementById('idPopUp').style.display='none'">Close</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Endorsement Pop Up -->
+
+	<div class="endorPopUp" id="endorPopUp">
+		<div class="popUpForm">
+			<div class="formData">
+				<select class="endorsementSelect" name="EndorsementSelect">
+					<option value="0">Programming Language</option>
+					<option value="1">Interested In</option>
+					<option value="2">Skill</option>
+					<option value="3">Experience</option>
+					<option value="4">Projects</option>
+				</select>
+				<input type="text" name="endorsementData" class="endorsementData" placeholder="Endorsement">
+				<button type="button" name="button" class="btn endoBtn btn-info">Add</button>
+				<button type="button" name="button" class="btn endoBtn btn-danger" onclick="document.getElementById('endorPopUp').style.display='none'">Close</button>
+			</div>
+		</div>
+	</div>
 
 
 	<!-- Linking JSs-->
