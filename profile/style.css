@@ -17,7 +17,7 @@ a {
 }
 a:hover {
     text-decoration: none !important;
-    color: #fff !important;
+    color: #888!important;
 }
 .contents {
     width: 100vw;
@@ -43,26 +43,34 @@ a:hover {
     border-radius: 50%;
     position: absolute;
     top: 4vw;
-    left: 5vw;
+    left: 50%;
+    transform: translate(-50%);
 }
 .name{
     color: #333;
-    line-height: 1.5vw;
+    text-align: center;
+    line-height: 30px;
     position: absolute;
-    left: 25.5vw;
-    top: 17vw;
+    top: 25vw;
+    left: 50%;
+    transform: translate(-50%);
 }
 .display-name {
     font-weight: bold;
-    font-size: 3vw;
+    font-size: 40px;
 }
-
 .regno {
     font-weight: lighter;
-    font-size: 2vw;
+    font-size: 30px;
+    margin: 5px;
 }
+.batchName {
+    color: #555 !important;
+    font-size: 28px;
+}
+
 .container {
-    margin-top: 27vw;
+    margin-top: 40vw;
 }
 .box {
     width: 100%;
@@ -86,7 +94,11 @@ a:hover {
     width: 20vw;
 }
 .profileContainer {
+    position: absolute;
     margin-left: 30px;
+    top: 34vw;
+    transform: translate(-70%);
+    left: 50%;
 }
 .profileLink {
     font-size: 40px;
