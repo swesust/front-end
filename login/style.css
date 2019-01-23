@@ -13,7 +13,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -60%);
+    transform: translate(-50%, -50%);
     /* border: 2px solid #bbb; */
     padding: 20px 20px;
     width: 450px;

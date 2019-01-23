@@ -22,6 +22,7 @@ a:hover {
 .contents {
     width: 100vw;
     position: absolute;
+    top: 50px;
 }
 .cover {
     width: 100vw;
