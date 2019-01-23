@@ -27,12 +27,15 @@ a:hover {
 .cover {
     width: 100vw;
     position: absolute;
-    height: 20%;
-    background-image: url('img/cover.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     z-index: -1;
+    height: 25vh;
+}
+.cover-pic {
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    max-height: 25vh;
+    width: 100vw;
 }
 .edit-profile {
     font-size: 30px;
@@ -208,4 +211,13 @@ table{
     .notImportant {
 		display: none;
 	}
+}
+
+@media only screen and (min-height: 1250px) {
+    .cover-pic {
+		max-height: 15vh;
+	}
+    .cover {
+        max-height: 15vh;
+    }
 }
