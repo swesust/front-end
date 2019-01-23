@@ -27,22 +27,32 @@ a:hover {
 .cover {
     width: 100vw;
     position: absolute;
-    height: 15vw;
+    height: 20%;
     background-image: url('img/cover.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
 }
+.edit-profile {
+    font-size: 30px;
+    position: absolute;
+    right: 30px;
+    bottom: -45px;
+    color: #888 !important;
+}
+.edit-profile:hover{
+    color: #333 !important;
+}
 .display-profile-pic {
     object-fit: cover;
     object-position: center;
-    width: 20vw;
-    height: 20vw;
+    width: 250px;
+    height: 250px;
     border: 10px solid #ddd;
     border-radius: 50%;
     position: absolute;
-    top: 4vw;
+    top: 75px;
     left: 50%;
     transform: translate(-50%);
 }
@@ -50,8 +60,8 @@ a:hover {
     color: #333;
     text-align: center;
     line-height: 30px;
-    position: absolute;
-    top: 25vw;
+    position: relative;
+    top: 350px;
     left: 50%;
     transform: translate(-50%);
 }
@@ -70,7 +80,7 @@ a:hover {
 }
 
 .container {
-    margin-top: 40vw;
+    margin-top: 450px;
 }
 .box {
     width: 100%;
@@ -96,7 +106,7 @@ a:hover {
 .profileContainer {
     position: absolute;
     margin-left: 30px;
-    top: 34vw;
+    top: 470px;
     transform: translate(-70%);
     left: 50%;
 }
