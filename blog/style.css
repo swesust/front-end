@@ -1,0 +1,27 @@
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 992px) {
+    .alignEnd {
+        position: absolute !important;
+        right: 10px;
+    }
+    .nav-item{
+        margin-left: 8px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .notImportant {
+        display: none;
+    }
+    .loginForm {
+        width: 70%;
+    }
+}

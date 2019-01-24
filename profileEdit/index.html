@@ -128,7 +128,7 @@
 						<input type="text" name="company" value="Google" id="companyNameChange">
 					</div>
 					<div class="form-group">
-						<label for="positionChange">Email</label>
+						<label for="positionChange">Position</label>
 						<input type="text" name="position" value="CEO" id="positionChange">
 					</div>
 					<div class="form-group">
@@ -151,7 +151,7 @@
         	</div>
 
 			<div class="submit-buttons">
-				<button type="submit" name="submit" class="btn sub-btn btn-success">Save</button>
+				<a href="#" class="btn sub-btn btn-success" onclick="document.getElementById('confPopUp').style.display='block'">Save</a>
 				<button type="reset" name="reset" class="btn sub-btn btn-danger">Reset</button>
 			</div>
 		</form>
@@ -192,6 +192,18 @@
 				<input type="text" name="endorsementData" class="endorsementData" placeholder="Endorsement">
 				<button type="button" name="button" class="btn endoBtn btn-info">Add</button>
 				<button type="button" name="button" class="btn endoBtn btn-danger" onclick="document.getElementById('endorPopUp').style.display='none'">Close</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Confermation PopUp -->
+
+	<div class="confPopUp" id="confPopUp">
+		<div class="popUpForm">
+			<div class="formData">
+				<input type="password" name="confPassEdit" class="endorsementData" placeholder="Password">
+				<button type="button" name="button" class="btn endoBtn btn-success">Confirm</button>
+				<button type="button" name="button" class="btn endoBtn btn-danger" onclick="document.getElementById('confPopUp').style.display='none'">Cancel</button>
 			</div>
 		</div>
 	</div>
