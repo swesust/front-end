@@ -10,3 +10,8 @@ function scrollAction() {
         document.getElementsByClassName('tab-section')[0].style.marginTop = '80px'
     }
 }
+
+
+function showFull() {
+    
+}
