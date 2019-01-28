@@ -85,6 +85,16 @@ a .post-title:hover {
 .searchInput {
     outline: none;
 }
+.post-thumbnail {
+    height: 195px;
+    width: 195px;
+    float: left;
+    margin-right: 20px;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid #aaa;
+    border-radius: 10px;
+}
 
 
 
