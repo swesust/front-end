@@ -20,12 +20,12 @@ a:hover {
 }
 .post-card {
     border: 1px solid #ddd;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 20px;
     margin-bottom: 20px;
-    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,.2);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,.2);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,.2);
 }
 a .post-title{
     color: #555;
@@ -59,9 +59,9 @@ a .post-title:hover {
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
-    -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,.2);
+    -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,.2);
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,.2);
 }
 .searchInput {
     border-radius: 10px 0px 0px 10px;
